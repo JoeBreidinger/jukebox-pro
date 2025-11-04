@@ -3,9 +3,9 @@ const app = express();
 export default app;
 
 import morgan from "morgan";
-
-import tracksRouter from "#api/tracks";
+import getUserFromToken from "#middleware/getUserFromToken";
 import playlistsRouter from "#api/playlists";
+import tracksRouter from "#api/tracks";
 import usersRouter from "#api/users";
 
 app.use(express.json());
